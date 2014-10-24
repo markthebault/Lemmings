@@ -1,0 +1,38 @@
+# Description d'un niveau pour le jeu Lemmings
+# Un # commence un commentaire qui se termine avec la fin de la ligne
+# Il n'y a pas d'ordre sur les lignes suivantes.
+# Seul "map" est en fin, juste avant la carte du niveau.
+speedlemmings	200	# vitesse apparition lemmings
+speedgame	2	# vitesse du jeu (en millisecondes)
+time	120	# temps maximum (en secondes)
+count	3	# nombre totoal de Lemmings
+rescue	60	# nombre de Lemmings qu'il faut sauver
+climber	10	# nombre d'aptitudes disponibles
+floater	10	#   "
+blocker	10	#   "
+bomber	10	#   "
+builder	10	#   "
+basher	10	#   "
+digger	10	#   "
+miner	10	#   "
+# sur la carte qui suit map, on a :
+#   * solide indestructible
+#   + solide destructible
+#   < solide semi-destructible (Lemmings ne peut creuser que de droite vers gauche)
+#   > solide semi-destructible (Lemmings ne peut creuser que de gauche vers droite)
+#   v solide semi-destructible (Lemmings ne peut creuser que creuse vers le bas)
+#   @ sortie
+#   % broyeur
+#   ! lance-flamme
+#   O trappe
+map
+**********************************************************************
+***                                                 >>>>>>>>>>>     **
+***                               +*  ++++++++++++++++++++++++++++++**
+***              +               + *  +++++++++++++++++++++++++++++++*
+***             +               +  *                                 *
+***O           ++++++++++++++++++++*  <<<<>>>>>>>>>vvvvvvvvvvvvvvvvvv*
+***           +++++++++++++++++++++*    *          vvvvvvvvvvvvvvvvvv*
+***          +                     *    *                            *
+***         +                      *   *                            @*
+**********************************************************************
